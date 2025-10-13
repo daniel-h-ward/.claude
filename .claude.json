@@ -1,12 +1,12 @@
 {
-  "numStartups": 13,
+  "numStartups": 14,
   "installMethod": "unknown",
   "autoUpdates": true,
   "tipsHistory": {
     "new-user-warmup": 2,
     "plan-mode-for-complex-tasks": 11,
-    "terminal-setup": 3,
-    "shift-enter": 3,
+    "terminal-setup": 14,
+    "shift-enter": 14,
     "memory-command": 4,
     "theme-command": 5,
     "status-line": 5,
@@ -49,6 +49,14 @@
     "/workspaces": {
       "allowedTools": [],
       "history": [
+        {
+          "display": "/login ",
+          "pastedContents": {}
+        },
+        {
+          "display": "こんにちは",
+          "pastedContents": {}
+        },
         {
           "display": "こんちゃ",
           "pastedContents": {}

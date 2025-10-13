@@ -11,7 +11,7 @@ fi
 
 # .claudeディレクトリに.credentials.jsonのシンボリックリンクを作成（既存チェック付き）
 if [ ! -L "$HOME/.claude/.credentials.json" ] && [ ! -e "$HOME/.claude/.credentials.json" ]; then
-    ln -s "$SCRIPT_DIR/.credentials.json" "$HOME/.claude"
+    ln -s "$SCRIPT_DIR/.credentials.json" "$HOME/.claude/.credentials.json"
     echo "✅ Created symlink: $HOME/.claude/.credentials.json -> $SCRIPT_DIR/.credentials.json"
 else
     echo "⚠️  $HOME/.claude/.credentials.json already exists, skipping symlink creation"

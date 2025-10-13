@@ -1,6 +1,13 @@
 # setup.shのディレクトリを取得
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# Node.js のセットアップスクリプト（Node.js 20 の例）
+curl -fsSL https://deb.nodesource.com/setup_24.x | sudo -E bash -
+
+# Node.js と npm をインストール
+sudo apt install -y nodejs
+sudo npm install -g @anthropic-ai/claude-code
+
 # .claudeディレクトリをホームディレクトリに作成
 if [ ! -d "$HOME/.claude" ]; then
     mkdir -p "$HOME/.claude"

@@ -1,5 +1,5 @@
 {
-  "numStartups": 5,
+  "numStartups": 7,
   "installMethod": "unknown",
   "autoUpdates": true,
   "tipsHistory": {
@@ -11,7 +11,11 @@
     "theme-command": 5,
     "status-line": 5,
     "prompt-queue": 5,
-    "enter-to-steer-in-relatime": 5
+    "enter-to-steer-in-relatime": 5,
+    "todo-list": 6,
+    "# for memory": 6,
+    "install-github-app": 7,
+    "drag-and-drop-images": 7
   },
   "cachedStatsigGates": {
     "tengu_disable_bypass_permissions_mode": false,
@@ -35,6 +39,14 @@
     "/workspaces": {
       "allowedTools": [],
       "history": [
+        {
+          "display": "こんにちは",
+          "pastedContents": {}
+        },
+        {
+          "display": "こんちゃ",
+          "pastedContents": {}
+        },
         {
           "display": "/login ",
           "pastedContents": {}
@@ -87,5 +99,13 @@
     "organizationRole": "admin",
     "workspaceRole": null,
     "organizationName": "hiro.nok.aok@gmail.com's Organization"
-  }
+  },
+  "s1mAccessCache": {
+    "6f24a7e6-e22e-4969-84c9-efa47f242ab3": {
+      "hasAccess": false,
+      "hasAccessNotAsDefault": false,
+      "timestamp": 1760385616885
+    }
+  },
+  "fallbackAvailableWarningThreshold": 0.2
 }

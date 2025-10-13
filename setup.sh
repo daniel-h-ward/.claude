@@ -1,10 +1,10 @@
 # setup.shのディレクトリを取得
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-シンボリックリンクを安全に作成
+# シンボリックリンクを安全に作成
 if [ ! -L "$HOME/.claude" ] && [ ! -e "$HOME/.claude" ]; then
-    ln -s "$SCRIPT_DIR" "$HOME/.claude"
-    echo "✅ Created symlink: ~/.claude -> $SCRIPT_DIR"
+    ln -s "$SCRIPT_DIR/.claude" "$HOME/.claude"
+    echo "✅ Created symlink: ~/.claude -> $SCRIPT_DIR/.claude"
 else
     echo "⚠️  ~/.claude already exists, skipping symlink creation"
 fi

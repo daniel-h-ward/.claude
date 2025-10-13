@@ -1,23 +1,31 @@
 {
-  "numStartups": 8,
+  "numStartups": 12,
   "installMethod": "unknown",
   "autoUpdates": true,
   "tipsHistory": {
     "new-user-warmup": 2,
-    "plan-mode-for-complex-tasks": 2,
+    "plan-mode-for-complex-tasks": 11,
     "terminal-setup": 3,
     "shift-enter": 3,
     "memory-command": 4,
     "theme-command": 5,
     "status-line": 5,
-    "prompt-queue": 5,
+    "prompt-queue": 11,
     "enter-to-steer-in-relatime": 5,
     "todo-list": 6,
     "# for memory": 6,
     "install-github-app": 7,
     "drag-and-drop-images": 7,
     "double-esc-code-restore": 8,
-    "continue": 8
+    "continue": 8,
+    "shift-tab": 9,
+    "image-paste": 9,
+    "tab-toggle-thinking": 9,
+    "ide-hotkey": 10,
+    "ultrathink-keyword": 10,
+    "custom-agents": 10,
+    "permissions": 12,
+    "custom-commands": 12
   },
   "cachedStatsigGates": {
     "tengu_disable_bypass_permissions_mode": false,
@@ -41,6 +49,34 @@
     "/workspaces": {
       "allowedTools": [],
       "history": [
+        {
+          "display": "こんちゃ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/exit",
+          "pastedContents": {}
+        },
+        {
+          "display": "こんちゃ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/exit",
+          "pastedContents": {}
+        },
+        {
+          "display": "こんちゃ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/exit",
+          "pastedContents": {}
+        },
+        {
+          "display": "こんちゃ",
+          "pastedContents": {}
+        },
         {
           "display": "/login ",
           "pastedContents": {}
@@ -91,7 +127,8 @@
       "projectOnboardingSeenCount": 4,
       "hasClaudeMdExternalIncludesApproved": false,
       "hasClaudeMdExternalIncludesWarningShown": false,
-      "exampleFiles": []
+      "exampleFiles": [],
+      "lastTotalWebSearchRequests": 0
     }
   },
   "hasOpusPlanDefault": false,

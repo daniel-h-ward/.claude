@@ -1,5 +1,5 @@
 {
-  "numStartups": 7,
+  "numStartups": 8,
   "installMethod": "unknown",
   "autoUpdates": true,
   "tipsHistory": {
@@ -15,7 +15,9 @@
     "todo-list": 6,
     "# for memory": 6,
     "install-github-app": 7,
-    "drag-and-drop-images": 7
+    "drag-and-drop-images": 7,
+    "double-esc-code-restore": 8,
+    "continue": 8
   },
   "cachedStatsigGates": {
     "tengu_disable_bypass_permissions_mode": false,
@@ -39,6 +41,14 @@
     "/workspaces": {
       "allowedTools": [],
       "history": [
+        {
+          "display": "/login ",
+          "pastedContents": {}
+        },
+        {
+          "display": "こんちゃ",
+          "pastedContents": {}
+        },
         {
           "display": "こんにちは",
           "pastedContents": {}
@@ -90,6 +100,14 @@
   "hasIdeOnboardingBeenShown": {
     "vscode": true
   },
+  "s1mAccessCache": {
+    "6f24a7e6-e22e-4969-84c9-efa47f242ab3": {
+      "hasAccess": false,
+      "hasAccessNotAsDefault": false,
+      "timestamp": 1760389787304
+    }
+  },
+  "fallbackAvailableWarningThreshold": 0.2,
   "oauthAccount": {
     "accountUuid": "845e6473-f1b3-4da4-9021-8b3996082239",
     "emailAddress": "hiro.nok.aok@gmail.com",
@@ -99,13 +117,5 @@
     "organizationRole": "admin",
     "workspaceRole": null,
     "organizationName": "hiro.nok.aok@gmail.com's Organization"
-  },
-  "s1mAccessCache": {
-    "6f24a7e6-e22e-4969-84c9-efa47f242ab3": {
-      "hasAccess": false,
-      "hasAccessNotAsDefault": false,
-      "timestamp": 1760385616885
-    }
-  },
-  "fallbackAvailableWarningThreshold": 0.2
+  }
 }

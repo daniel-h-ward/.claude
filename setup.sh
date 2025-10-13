@@ -1,14 +1,23 @@
 # setup.shのディレクトリを取得
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# シンボリックリンクを安全に作成
-if [ ! -L "$HOME/.claude" ] && [ ! -e "$HOME/.claude" ]; then
-    ln -s "$SCRIPT_DIR/.claude" "$HOME/.claude"
-    echo "✅ Created symlink: ~/.claude -> $SCRIPT_DIR/.claude"
+# .claudeディレクトリをホームディレクトリに作成
+if [ ! -d "$HOME/.claude" ]; then
+    mkdir -p "$HOME/.claude"
+    echo "✅ Created directory: $HOME/.claude"
 else
-    echo "⚠️  ~/.claude already exists, skipping symlink creation"
+    echo "⚠️  $HOME/.claude already exists, skipping directory creation"
 fi
 
+# .claudeディレクトリに.credentials.jsonのシンボリックリンクを作成（既存チェック付き）
+if [ ! -L "$HOME/.claude/.credentials.json" ] && [ ! -e "$HOME/.claude/.credentials.json" ]; then
+    ln -s "$SCRIPT_DIR/.credentials.json" "$HOME/.claude"
+    echo "✅ Created symlink: $HOME/.claude/.credentials.json -> $SCRIPT_DIR/.credentials.json"
+else
+    echo "⚠️  $HOME/.claude/.credentials.json already exists, skipping symlink creation"
+fi
+
+# .claude.jsonのシンボリックリンクを作成（既存チェック付き）
 if [ ! -L "$HOME/.claude.json" ] && [ ! -e "$HOME/.claude.json" ]; then
     ln -s "$SCRIPT_DIR/.claude.json" "$HOME"
     echo "✅ Created symlink: ~/.claude.json -> $SCRIPT_DIR/.claude.json"

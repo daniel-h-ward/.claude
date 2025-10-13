@@ -1,12 +1,17 @@
 {
-  "numStartups": 3,
+  "numStartups": 5,
   "installMethod": "unknown",
   "autoUpdates": true,
   "tipsHistory": {
     "new-user-warmup": 2,
     "plan-mode-for-complex-tasks": 2,
     "terminal-setup": 3,
-    "shift-enter": 3
+    "shift-enter": 3,
+    "memory-command": 4,
+    "theme-command": 5,
+    "status-line": 5,
+    "prompt-queue": 5,
+    "enter-to-steer-in-relatime": 5
   },
   "cachedStatsigGates": {
     "tengu_disable_bypass_permissions_mode": false,
@@ -35,6 +40,22 @@
           "pastedContents": {}
         },
         {
+          "display": "こんにちは",
+          "pastedContents": {}
+        },
+        {
+          "display": "/login ",
+          "pastedContents": {}
+        },
+        {
+          "display": "こんちゃ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/login ",
+          "pastedContents": {}
+        },
+        {
           "display": "こんちゃ",
           "pastedContents": {}
         }
@@ -45,7 +66,7 @@
       "disabledMcpjsonServers": [],
       "hasTrustDialogAccepted": true,
       "ignorePatterns": [],
-      "projectOnboardingSeenCount": 3,
+      "projectOnboardingSeenCount": 4,
       "hasClaudeMdExternalIncludesApproved": false,
       "hasClaudeMdExternalIncludesWarningShown": false,
       "exampleFiles": []

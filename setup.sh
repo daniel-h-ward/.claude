@@ -26,6 +26,11 @@ fi
 if [ ! -L "$HOME/.claude.json" ] && [ ! -e "$HOME/.claude.json" ]; then
     ln -s "$SCRIPT_DIR/.claude.json" "$HOME"
     echo "✅ Created symlink: ~/.claude.json -> $SCRIPT_DIR/.claude.json"
+elif [ -f "$HOME/.claude.json" ] && [ ! -L "$HOME/.claude.json" ]; then
+    # 実ファイルが存在する場合は削除してシンボリンクを作成
+    rm "$HOME/.claude.json"
+    ln -s "$SCRIPT_DIR/.claude.json" "$HOME"
+    echo "✅ Replaced file with symlink: ~/.claude.json -> $SCRIPT_DIR/.claude.json"
 else
-    echo "⚠️  ~/.claude.json already exists, skipping symlink creation"
+    echo "⚠️  ~/.claude.json already exists as symlink, skipping creation"
 fi

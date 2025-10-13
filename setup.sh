@@ -13,8 +13,13 @@ fi
 if [ ! -L "$HOME/.claude/.credentials.json" ] && [ ! -e "$HOME/.claude/.credentials.json" ]; then
     ln -s "$SCRIPT_DIR/.credentials.json" "$HOME/.claude/.credentials.json"
     echo "✅ Created symlink: $HOME/.claude/.credentials.json -> $SCRIPT_DIR/.credentials.json"
+elif [ -f "$HOME/.claude/.credentials.json" ] && [ ! -L "$HOME/.claude/.credentials.json" ]; then
+    # 実ファイルが存在する場合は削除してシンボリンクを作成
+    rm "$HOME/.claude/.credentials.json"
+    ln -s "$SCRIPT_DIR/.credentials.json" "$HOME/.claude/.credentials.json"
+    echo "✅ Replaced file with symlink: $HOME/.claude/.credentials.json -> $SCRIPT_DIR/.credentials.json"
 else
-    echo "⚠️  $HOME/.claude/.credentials.json already exists, skipping symlink creation"
+    echo "⚠️  $HOME/.claude/.credentials.json already exists as symlink, skipping creation"
 fi
 
 # .claude.jsonのシンボリックリンクを作成（既存チェック付き）

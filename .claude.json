@@ -1,5 +1,5 @@
 {
-  "numStartups": 14,
+  "numStartups": 15,
   "installMethod": "unknown",
   "autoUpdates": true,
   "tipsHistory": {
@@ -49,6 +49,14 @@
     "/workspaces": {
       "allowedTools": [],
       "history": [
+        {
+          "display": "/login ",
+          "pastedContents": {}
+        },
+        {
+          "display": "こんにちは",
+          "pastedContents": {}
+        },
         {
           "display": "/login ",
           "pastedContents": {}
